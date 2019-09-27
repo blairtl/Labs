@@ -1,0 +1,19 @@
+What it does: Calculates your age in seconds.
+
+What output should look like:
+
+All inputs should be their numerical values (i.e. July would be 7).
+ 
+What day of the month were you born?
+8
+What month were you born?
+5
+What year were you born?
+1985
+Your age in seconds is: 1085250111
+
+How to run script:
+
+1: Download file.
+2: Open File Explorer, and navigate to the downloaded file.
+3: Right-click the file, and select "Run with Powershell"
