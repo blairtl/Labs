@@ -1,0 +1,11 @@
+WHAT IT IS: A program to set up a small server and show different bits of info on that server's host machine.
+
+
+
+WHAT IT SHOULD LOOK LIKE:
+Hostname: $
+IP: $
+Server Uptime: $
+Total Memory: $
+Free Memory: $
+CPUs: $
