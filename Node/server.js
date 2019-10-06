@@ -22,9 +22,9 @@ http.createServer(function(req, res){
                         <p>Hostname: ${myHostName}</p>
                         <p>IP: ${ip.address}</p>
                         <p>Server Uptime: ${process.uptime}</p>
-                        <p>Total Memory: ${os.totalmem}</p>
-                        <p>Free Memory: ${os.freemem}</p>
-                        <p>Number of CPUs: ${os.cpus}</p>
+                        <p>Total Memory: ${os.totalmem()}</p>
+                        <p>Free Memory: ${os.freemem()}</p>
+                        <p>Number of CPUs: ${os.cpus().length}</p>
                     </BODY>
                 </HTML>
         '
