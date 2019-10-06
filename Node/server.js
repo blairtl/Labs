@@ -38,8 +38,8 @@ http.createServer(function(req, res){
                         <p>Hostname: ${myHostName}</p>
                         <p>IP: ${ip.address}</p>
                         <p>Server Uptime: ${totalUpTimeHours} + ":" + ${totalUpTimeMins} + ":" + ${totalUpTimeSeconds}</p>
-                        <p>Total Memory: ${bytesToSize(os.totalmem())}</p>
-                        <p>Free Memory: ${bytesToSize(os.freemem())}</p>
+                        <p>Total Memory in MB: ${bytesToSize(os.totalmem())}</p>
+                        <p>Free Memory in MB: ${bytesToSize(os.freemem())}</p>
                         <p>Number of CPUs: ${os.cpus().length}</p>
                     </BODY>
                 </HTML>
