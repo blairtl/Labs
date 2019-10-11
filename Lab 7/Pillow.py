@@ -32,3 +32,4 @@ out = im.rotate(45)
 
 #This applies the detail filter
 out = im.filter(ImageFilter.DETAIL)
+
