@@ -1,5 +1,5 @@
 var http = require("http");
-var data = require("C:/Labs/widgets.json")
+var data = require("D:/Documents/School work/Scripting Language/Github/widgets.json")
 
 var server = http.createServer(function(req, res){
     if (req.url === "/") {
