@@ -6,12 +6,16 @@ foreach($Drive in $drives) {
         Sort-Object Length -Descending |
         Select-Object -First 5
 
-   Get-WmiObject Win32_LogicalDisk -ComputerName $env:COMPUTERNAME -Filter "DeviceID='$Drive'" | Select-Object Size, FreeSpace
+    
 
-    "($Drive\) drive total size in GB: "
-    [Math]::Round($Drive.Size / 1GB)
-    "($Drive\) drive free space in GB: "
-    [Math]::Round($Drive.FreeSpace / 1GB)
+    $driveName = Get-PSDrive $Drive 
+    $used = $driveName.Used
+    $free = $driveName.Free
+
+    "($Drive\) drive total size in GB: " 
+    ($used / 1GB)
+    "($Drive\) drive free space in GB: " 
+    ($free / 1GB)
     ""
     ""
 }
