@@ -1,4 +1,4 @@
-What it does: Reads your system C: drive for the total storage space and free storage space,
+What it does: Reads your system drives for the total storage space and free storage space,
 and outputs the variables rounded to the nearst full GB. It will then output the 5 largest files it
 can find on each drive while not outputing files it is denied access to. It will also show you the filepath for each file. Files found in the same folder will be consolidated rather than have entire entries to themselves.
 
